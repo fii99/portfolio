@@ -178,7 +178,7 @@ nav button {
 	display: none;
 }
 
-.nav_container {
+.nav_container {	
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -273,7 +273,6 @@ header {
 .ability:hover {
 	box-shadow: 0 3rem 3rem var(--color-bg1);
 	transform: scale(1.05);
-	background: var(--color-light);
 }
 
 .ability_icon {
@@ -319,6 +318,8 @@ header {
 	text-align: center;
 	height: 95vh;	
 	padding-top: 6rem;
+	/* background: #187498; */
+	width: 100vw;
 }
 
 .certificates_container {
@@ -375,6 +376,10 @@ header {
 }
 
 /* =====PROJECTS===== */
+.projects{
+	width: 100vw;
+}
+
 .projects_container{
 	/* background: var(--color-danger); */
 	padding-top: 2.5rem;
@@ -598,6 +603,92 @@ header {
 	list-style-position: inside;
 }
 
+/* =====CONTACT===== */
+.contact{
+	background: var(--color-bg3);
+	box-shadow: 0 0 3rem var(--color-dark);
+	width: 100vw;
+}
+
+.contact_container{
+	display: grid;
+	grid-template-columns:  2fr 3fr;
+	height: 25rem;
+	margin: 10rem auto 18rem auto;
+	color: var(--color-dark);
+	padding: 2rem 5rem;
+	gap: 3rem;
+	
+}
+
+.contact_info{
+	position: relative;
+	background: var(--color-light);
+	padding: 1rem 4rem 4rem 4rem;
+	border-radius: 2rem;
+	bottom: 13rem;
+	transition: var(--transition);
+}
+
+.contact_info:hover{
+	position: relative;
+	background: var(--color-dark);
+	padding: 1rem 3rem 4rem 3rem;
+	border-radius: 2rem;
+	bottom: 13rem;
+	color: var(--color-light);
+	box-shadow: 0 0 3rem var(--color-dark);
+}
+
+.contact_info p, .contact_info small{
+	font-size: 0.84rem;
+}
+
+.contact_image{
+	margin-bottom: 1rem;
+}
+
+.contact_details{
+	margin: 1rem 0 2rem 0;
+	line-height: 2.6;
+}
+
+.contact_form{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form_name{
+	display: flex;
+	gap: 1rem;
+}
+
+.contact_form input[type="text"]{
+	width: 50%;
+}
+
+input, textarea{
+	padding: 1rem;
+	color: var(--color-dark);
+	background: var(--color-bg2);
+}
+
+button{
+	width: max-content;
+	background: var(--color-dark);
+	color: var(--color-light);
+	padding: 1rem 2rem;
+	cursor: pointer;
+	border: 1px solid transparent;;
+}
+
+button:hover{
+	border: 1px solid var(--color-dark);
+	color: var(--color-dark);
+	background: transparent;
+}
+
 /* =====FAQs===== */
 .faqs {
 	padding: 6rem 0 4rem 0;
@@ -605,13 +696,14 @@ header {
 	background: var(--color-bg3);
 	text-align: center;
 	box-shadow: inset 0 0 3rem var(--color-dark);
+	width: 100vw;
 
 }
 
 .faqs_container{
 	margin-top: 2rem;
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 2fr 3fr;
 	gap: 0.8rem;
 }
 
@@ -668,6 +760,7 @@ header {
 footer{
 	background: var(--color-dark);
 	height: 50vh;
+	width: 100vw;
 }
 
 .footer_container{
