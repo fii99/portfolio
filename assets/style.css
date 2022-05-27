@@ -901,9 +901,9 @@ footer{
 	}
 }
 
-/* =====MEDIA QUERIES 600===== */
+/* =====MEDIA QUERIES 360===== */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 360px){
 	.container{
 		width: var(--container-lg);
 		margin: 0 auto;
@@ -952,7 +952,7 @@ footer{
 		position: relative;
 		display: flex;
 		flex-direction: column-reverse;
-		top: 5rem;
+		top: 7.5rem;
 		gap: 0rem;
 		height: 120vh;
 		margin-bottom: 20rem;
@@ -965,13 +965,12 @@ footer{
 	/* ABILITIES */
 	.abilities_left{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 	}
 
 	/* CERTIFICATE */
 	.certificates{
-		margin-top: 45rem;
-
+		margin-top: 85rem;
 	}
 
 	.certificates_container{
@@ -981,8 +980,23 @@ footer{
 
 	/* PROJECT */
 	.project_top{
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: 1fr;	
+	}
+
+	.project_image{
+		/* display: none; */
+	}
+
+	.progress_lessons{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.project_details{
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 
 	/* CONTACT */
@@ -1023,12 +1037,12 @@ footer{
 	/* FOOTER */
 	.footer_container{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		row-gap: 1rem;
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
 	}
 
-	.foot{
-		padding: 0rem;
+	.copyright small{
+		font-size: 0.6rem;
 	}
 
 }
