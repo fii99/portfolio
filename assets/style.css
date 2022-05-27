@@ -903,7 +903,7 @@ footer{
 
 /* =====MEDIA QUERIES 360===== */
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 560px){
 	.container{
 		width: var(--container-lg);
 		margin: 0 auto;
@@ -970,7 +970,7 @@ footer{
 
 	/* CERTIFICATE */
 	.certificates{
-		margin-top: 85rem;
+		margin-top: 80rem;
 	}
 
 	.certificates_container{
