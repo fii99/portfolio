@@ -330,14 +330,6 @@ header {
 	transition: var(--transition);
 }
 
-.certificate:nth-child(3):hover {
-	background: var(--color-bg2);
-	transform: none;
-	box-shadow: none;
-	border: 2px solid var(--color-bg2);
-	color: var(--color-dark);
-}
-
 .certificate:hover {
 	background: transparent;
 	border: 2px solid var(--color-bg3);
@@ -353,12 +345,6 @@ header {
 
 .certificate_info p {
 	margin: 0.8rem 0 1.2rem;
-}
-
-.notavailable {
-	background: transparent;
-	border: 2px solid var(--color-bg3);
-	text-align: center;
 }
 
 /* =====PROJECTS===== */
